@@ -7,11 +7,11 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
     var amount = interest+principal;
     document.getElementById("principal").focus();
-    if(parseInt(principal) <= 0){
+    if(parseInt(amount) <= 0){
         document.getElementById("result").innerHTML="Enter a positive Number";
     }
     else{
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+(year)+"\<br\>";
+    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
 }
 }
 
