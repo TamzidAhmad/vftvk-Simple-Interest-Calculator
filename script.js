@@ -21,14 +21,3 @@ function updateRate()
     document.getElementById("rate_val").innerText=rateval;
 }
         
-function reset(){
-
-    var principaltwo = document.getElementById("principal");
-    principaltwo.value="0";
-    var ratetwo = document.getElementById("rate");
-    ratetwo.value = "1";
-    var yearstwo = document.getElementById("years");
-    yearstwo.value = "0";
-    document.getElementById("result").innerHTML="";
-
-}
