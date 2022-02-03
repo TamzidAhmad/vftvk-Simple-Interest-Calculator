@@ -23,13 +23,12 @@ function updateRate()
         
 function reset(){
 
-    var principal = document.getElementById("principal");
-    principal.value=0;
-    var rate = document.getElementById("rate");
-    rate.value = 1;
-    var years = document.getElementById("years");
-    years.value = 0;
-    var interest = 0;
+    var principaltwo = document.getElementById("principal");
+    principaltwo.value=0;
+    var ratetwo = document.getElementById("rate");
+    ratetwo.value = 1;
+    var yearstwo = document.getElementById("years");
+    yearstwo.value = 0;
     document.getElementById("result").innerHTML="";
 
 }
