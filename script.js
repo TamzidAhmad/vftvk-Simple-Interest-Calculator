@@ -11,7 +11,7 @@ function compute()
         document.getElementById("result").innerHTML="Enter a positive Number";
     }
     else{
-    document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+" from interest,\<br\>in the year "+year+"\<br\>";
+    document.getElementById("result").innerHTML="If you deposit "+<mark>principal</mark>+",\<br\>at an interest rate of "+<mark>rate</mark>+"%\<br\>You will receive an amount of "+<mark>amount</mark>+" from interest,\<br\>in the year "+<mark>year</mark>333+"\<br\>";
 }
 }
 
@@ -19,4 +19,4 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
-}
+}3
