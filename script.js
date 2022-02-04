@@ -8,7 +8,10 @@ function compute()
     var amount = (parseInt(interest)).toFixed(2);
     document.getElementById("principal").focus();
     if(parseInt(amount) <= 0){
-        document.getElementById("result").innerHTML="Enter a positive Number";
+        document.getElementById("result").innerHTML="Enter a positive number";
+    }
+    else if((parseInt(amount) <= 0) && ((parseInt(principal)) >= 0)){
+        document.getElementById("result").innerHTML="Enter a larger number";
     }
     else{
     document.getElementById("result").innerHTML="If you deposit \<mark\>"+principal+",\</mark\>\<br\>at an interest rate of \<mark\>"+rate+"\</mark\>%\<br\>You will receive an amount of \<mark\>"+amount+"\</mark> from interest,\<br\>in the year \<mark\>"+year+"\</mark\>\<br\>";
@@ -19,4 +22,15 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
+}
+
+function reset()
+{
+    var principal = document.getElementById("principal")
+    principal.value = "0";
+    var rate = document.getElementById("rate");
+    rate.value= "1";
+    document.getElementById("rate_val").innerText="1";
+    var years = document.getElementById("years");
+    years.value = "1";
 }
