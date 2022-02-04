@@ -34,4 +34,5 @@ function reset()
     var years = document.getElementById("years");
     years.value = "1";
     document.getElementById("result").innerHTML="";
+    document.getElementById("principal").focus();
 }
