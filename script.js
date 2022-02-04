@@ -8,10 +8,12 @@ function compute()
     var amount = (parseInt(interest)).toFixed(2);
     document.getElementById("principal").focus();
     if(parseInt(amount) <= 0){
-        document.getElementById("result").innerHTML="Enter a positive number";
+        alert("Enter a positive number");
+        document.getElementById("principal").focus();
     }
     else if((parseInt(amount) <= 0) && ((parseInt(principal)) >= 0)){
-        document.getElementById("result").innerHTML="Enter a larger number";
+        alert("Enter a larger number");
+        document.getElementById("principal").focus();
     }
     else{
     document.getElementById("result").innerHTML="If you deposit \<mark\>"+principal+",\</mark\>\<br\>at an interest rate of \<mark\>"+rate+"\</mark\>%\<br\>You will receive an amount of \<mark\>"+amount+"\</mark> from interest,\<br\>in the year \<mark\>"+year+"\</mark\>\<br\>";
